@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share to Get 50GB</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color:#045F5F;
+            font-family: 'Poppins', serif; /* Unique font for "Share 10 friends" */
+            font-weight: bold;
+        }
+
+        .header-text {
+            font-family: 'Roboto', serif; /* Font for additional text */
+            margin-top: 10px;
+            font-size: 18px;
+            color: #033E3E;
+            font-weight: 500;
+        }
+
+        /* Header Image */
+        .header-img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* New Image under WhatsApp button */
+        .share-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            cursor: pointer; /* Make the image clickable */
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            height: 30px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(to right, #4caf50, #00c853);
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .share-buttons {
+            margin: 20px 0;
+        }
+
+        .share-btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+            background: #25d366;
+        }
+
+        .share-btn:hover {
+            opacity: 0.8;
+        }
+
+        #reward-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .reward-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            border: none;
+            background: #F5F5F5;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .reward-btn img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .reward-btn:hover {
+            background:#F5F5F5;
+        }
+
+        .home-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .home-btn:hover {
+            opacity: 0.8;
+        }
+
+        .whatsapp-logo {
+            width: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Image -->
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEhj3BuD5-3U3PB0becs6rdmOzVhdoVklnPb8xMBMgXuZUslmMZPMKJ6Z8nFiJcTD3ZyKJPhEyHrNi_e_XrGUZQ_z6GuM4UCQZE20nGNOBWNEYCmx9UXt8hQMc6BnFp5B6nrYfC7gDTZiie80895pjzLk138OCXZ2WNdjbRYiloEAoDds3HjR9v-jMnZw/s500/bd4g20251.jpg" alt="Header Image" class="header-img">
+
+        <!-- Additional text under the header -->
+    <div class="header-text">
+        ১০ জন বন্ধুকে শেয়ার করলেই পেয়ে যাচ্ছেন ১০০ জিবি ফ্রী ডাটা। সবার জন্য উন্মুক্ত!
+    </div>
+    
+    <h2>Share 10 friends to get 100GB data for free</h2>
+    
+
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar">0%</div>
+    </div>
+
+    <div class="share-buttons">
+        <a href="#" class="share-btn" onclick="shareWhatsApp()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+            Share on WhatsApp
+        </a>
+    </div>
+    
+    <!-- Image shown under WhatsApp share button -->
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgTGBhVWAqVoI1T1PfUAJ8p883GSIP5VU91zMYINSX24TBcRP6jxoBIz8j_GpcU-Jx-gIsMDCt8k2vQ8HSc0V-4ijws7vQxccBayIOZ05a5m8puLwQXYhDJwSdZ1LWYcOYJB2aYgtI3uXC03bnMAJ42ySpWcT3AuAQvh0ZdXaWr6tb_ZKnhSNP20JXqbM/s1912/IMG_20250316_093556.jpg" alt="Share Image" class="share-img" id="share-image" onclick="window.location.href='https://shorturl.at/1FjMw';">
+
+    
+
+    <div id="reward-section">
+        <h3>Select Your Network to Claim 100GB</h3>
+        <a href="https://shorturl.at/1FjMw" class="reward-btn">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgIC6WDV4BofJebtmf2qBv4dHoLD9Yv1a-b66qooK6I48PuZwkRaD41rZZHvVwCXFBqJ-IS0HuL-lQCy3uMBabSvqbhhz7UPV26eMTMAcVC6ezhiZgUGUTKFIIDj9Dq9jW362Jky9iNBtJKi8iHKPj02K-BZTaAn6F_TyU4H6d86SyY3Spo8vwB94amOY/s554/images%20(5).png" alt="Robi"> Get 100GB for Robi
+        </a>
+        <a href="https://shorturl.at/1FjMw" class="reward-btn">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitHC6ibrtoMksGxftX7gpfYmdP2aPPOS4WdkQV9alzr0rz7XjhpMyoYSqGlzYJ3IYC88eJlLXg6aUHCJsYhhmk0DYNhMQuraA_EeNIn0-ckqDvYcGJCmI41QwTKmVF4Bq0XuHIjq3QlmyQaJRWMwpjsCIvvjB6eYwu_RbwgEKj8JnnUnwzw24kpY-W-dw/s1200/Airtel_logo-01.png" alt="Airtel"> Get 100GB for Airtel
+        </a>
+        <a href="https://shorturl.at/1FjMw" class="reward-btn">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXFeTfgB8lQh7AlLrqBl-eEX1qrxRBFv3RDbg9_PwwEJhFZzkbwaNeeM6FXrGOTnxQZi2d1WEPKdp72wlmTNIbGyBbAiJTK-7Lt9R7dpNn_GKwEcLx_Mj__Ecr-LsaF2Qj01jTF_qjbAXEvlHLUj2Tl2GqxN-iRlqTec3oxgRZy3EYssD-F7uwaVR9xW0/s1200/Grameenphone_Logo_GP_Logo.svg.png" alt="Grameenphone"> Get 100GB for Grameenphone
+        </a>
+        <a href="https://shorturl.at/1FjMw" class="reward-btn">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkEZtLTMbfbCMkdH76Dne8clNUs0lxsBch-gYvkcvBH1tWaVLDFLKWWbo41Pl89WYSU2hA7mDAb_5vF8zJG1JCQBN_wzIi8YpKlZDoGk-BDP_b2WdyK5nFinpukwwgjubhnbEgJC0i7kjGL8EmFRKen0wTzxKtc8hh5bHGi2rJYHOcqHDg_sYDjvhLPes/s3000/TeleTalk-Logo.wine.png" alt="Teletalk"> Get 100GB for Teletalk
+        </a>
+        <a href="https://shorturl.at/1FjMw" class="reward-btn">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGiD7ddERKdh1MO94P85MrShz_qW9oZhaqL72wppntuxKCxjfnY1e9gTldmQB4X0oOpK49lI4CvV159BvDbvcw34hCOr0bvzRpjuVOhGxjeOR_AYIJw5gdOgY9aQcCQVnE1gRnkFFmwBydUacCs5E3_ymJWflwu0FjHMVSIImWa-UcRwXY-HX5id4aeVU/s1597/Logo_of_Banglalink.svg.png" alt="Banglalink"> Get 100GB for Banglalink
+        </a>
+
+        <button class="home-btn" onclick="resetProgress()">Home</button>
+    </div>
+
+    <script>
+        let shareCount = 0;
+        const shareText = "Enjoy your free 50GB😃😍 data for Ramadan gift!🎊🎁\nGet it now: titok.bd";
+        const encodedText = encodeURIComponent(shareText);
+
+        function loadProgress() {
+            const savedProgress = localStorage.getItem("progress");
+            const savedTime = localStorage.getItem("progressTime");
+
+            if (savedProgress && savedTime) {
+                const elapsedTime = Date.now() - parseInt(savedTime);
+                
+                if (elapsedTime < 3600000) { // 1 hour = 3600000 ms
+                    shareCount = parseInt(savedProgress);
+                    updateUI();
+                } else {
+                    resetProgress();
+                }
+            }
+        }
+
+        function shareWhatsApp() {
+            let url = "https://api.whatsapp.com/send?text=" + encodedText;
+            window.open(url, "_blank");
+            updateProgress();
+        }
+
+        function updateProgress() {
+            if (shareCount < 10) {
+                shareCount++;
+                localStorage.setItem("progress", shareCount);
+                localStorage.setItem("progressTime", Date.now());
+                updateUI();
+            }
+        }
+
+        function updateUI() {
+            let progress = (shareCount / 10) * 100;
+            document.getElementById("progress-bar").style.width = progress + "%";
+            document.getElementById("progress-bar").innerText = Math.round(progress) + "%";
+
+            // Hide the share image when the progress reaches 100% or the reward section is displayed
+            if (shareCount === 10) {
+                document.getElementById("reward-section").style.display = "block";
+                document.getElementById("share-image").style.display = "none";
+            }
+        }
+
+        function resetProgress() {
+            localStorage.removeItem("progress");
+            localStorage.removeItem("progressTime");
+            shareCount = 0;
+            document.getElementById("progress-bar").style.width = "0%";
+            document.getElementById("progress-bar").innerText = "0%";
+            document.getElementById("reward-section").style.display = "none";
+            document.getElementById("share-image").style.display = "block"; // Show the image again when reset
+        }
+
+        window.onload = loadProgress;
+    </script>
+
+</body>
+</html>
